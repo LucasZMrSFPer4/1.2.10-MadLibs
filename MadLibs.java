@@ -4,15 +4,15 @@ public class MadLibs
 {
   public static void main(String[] args)
   {
-    String incompleteMadLib1 = new String("I went to the animal <noun>, the <plural_noun> and the <number> beasts were there.");
-    String incompleteMadLib2 = new String("Once upon a time in a <adjective> land, a <noun> <adverb> grew.");
-    String incompleteMadLib3 = new String("I am not <adjective>, <conjunction> I'm not going to <verb> yet.");
+    String incompleteMadLib1 = new String("I went to the animal <noun>, the <plural_noun> and the <number> beasts were there."); // Mad Lib 1
+    String incompleteMadLib2 = new String("Once upon a time in a <adjective> land, a <noun> <adverb> grew."); // Mad Lib 2
+    String incompleteMadLib3 = new String("I am not <adjective>, <conjunction> I'm not going to <verb> yet."); // Mad Lib 3
 
     Scanner sc = new Scanner(System.in);
-    System.out.print("Prompts:\n1. Going to Disneyland\n2. Fairytale\n3. Time to Eat!\n");
+    System.out.print("Prompts:\n1. Going to Disneyland\n2. Fairytale\n3. Time to Eat!\n"); // the user chooses a prompt
     String promptChoice = new String(sc.nextLine());
 
-    if (promptChoice.equals("1")) {
+    if (promptChoice.equals("1")) { // If the user chooses prompt 1, he/she will choose a noun, a plural noun, and a number.
       System.out.print("Noun: ");
       String noun = new String(sc.nextLine());
       System.out.print("Plural Noun: ");
@@ -26,7 +26,7 @@ public class MadLibs
       System.out.print(substring1 + noun + substring2 + pluralNoun + substring3 + number + substring4);
     }
 
-    if (promptChoice.equals("2")) {
+    if (promptChoice.equals("2")) { // If the user chooses prompt 2, he/she will choose an adjective, a noun, and an adverb.
       System.out.print("Adjective: ");
       String adjective = new String(sc.nextLine());
       System.out.print("Noun: ");
@@ -39,7 +39,7 @@ public class MadLibs
       System.out.print(substring1 + adjective + substring2 + noun + " " + adverb + substring3);
     }
 
-    if (promptChoice.equals("3")) {
+    if (promptChoice.equals("3")) { // If the user chooses prompt 3, he/she will choose an adjective, a conjunction, and a verb.
       System.out.print("Adjective: ");
       String adjective = new String(sc.nextLine());
       System.out.print("Conjunction: ");
